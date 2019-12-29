@@ -8,7 +8,7 @@ spring:
     # 下面为连接池的补充设置，应用到上面所有数据源中
     # 初始化大小，最小，最大
     druid:
-      initialSize: 5
+      initialSize: 10
       minIdle: 5
       maxActive: 20
       # 配置获取连接等待超时的时间

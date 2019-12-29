@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    include: jdbc,redis
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+  aop:
+    auto: true

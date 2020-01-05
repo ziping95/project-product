@@ -77,7 +77,7 @@
     <Loggers>
 
 
-        <Logger name="org.springframework" level="WARN"/>
+        <!--<Logger name="org.springframework" level="WARN"/>-->
         <Logger name="org.hibernate.validator" level="INFO"/>
         <Logger name="org.apache.http.wire" level="INFO"/>
         <Logger name="org.apache.catalina" level="WARN"/>

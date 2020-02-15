@@ -5,8 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
@@ -19,6 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan({"com.wzp.module.*.mapper"})
 @ComponentScan("com.wzp")
 @EnableTransactionManagement // 开启事务
+@EnableScheduling // 开启定时任务
 @SpringBootApplication
 public class ProjectProductApplication extends SpringBootServletInitializer {
 

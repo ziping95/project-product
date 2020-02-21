@@ -20,7 +20,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan("com.wzp")
 @EnableScheduling // 开启定时任务
 @EnableTransactionManagement // 开启事务
-@EnableScheduling // 开启定时任务
 @SpringBootApplication
 public class ProjectProductApplication extends SpringBootServletInitializer {
 

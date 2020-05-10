@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: server.ip
+    port: 5672
+    username: wangziping
+    password: wangziping
+    publisher-confirms: true    #  消息发送到交换机确认机制,是否确认回调
+    publisher-returns: true    #  消息发送到交换机确认机制,是否返回回调
+    listener:
+      simple:
+        prefetch: 1 #消费者每次从队列获取的消息数量
+        acknowledge-mode: manual #采用手动应答
+        retry:
+          enabled: true #是否支持重试

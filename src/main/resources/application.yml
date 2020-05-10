@@ -1,8 +1,9 @@
 spring:
   profiles:
-    include: jdbc,redis
+    include: jdbc,redis,rabbitmq
   devtools:
     restart:
       enabled: true  #设置开启热部署
   aop:
     auto: true
+
